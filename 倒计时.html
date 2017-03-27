@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<p id="p">10</p>
+</body>
+<script>
+	var p = document.getElementById("p");
+	// var num = 10;
+	function count(){
+		// num--;
+		p.innerHTML--;
+		if(p.innerHTML < 1){
+			clearInterval(timer);
+			window.location = "2.html";
+		}
+	}
+	var timer = setInterval(count,1000);
+</script>
+</html>

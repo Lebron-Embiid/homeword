@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+</body>
+<script>
+	var score = [69,34,29,90,59,70,85,55,45,98,79];
+	var pass = [];
+	var fail = [];
+	for(var i=0;i<score.length;i++){
+		if(score[i]>60){
+			pass.push(score[i]);
+		}else{
+			fail.push(score[i]);
+		}
+	}
+		alert("及格的个数为："+pass.length+" 分别是："+pass);
+		alert("不及格的个数为"+fail.length+" 分别是："+fail);
+</script>
+</html>
